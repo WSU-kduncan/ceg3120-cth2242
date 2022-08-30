@@ -51,7 +51,7 @@ Entries that are currently crossed out we will get to later in the course that y
 - pull
   - The pull command fetches and the remote repository and automatically merges it with your local repository
     - If the branch you are pulling to is behind the remote branch, the branch will be fast-forwarded to match the remote.
-    - If the branchs you want to pull to has diverged from the remote branch you will need to specify how to reconcile the divergence with `--rebase` or `--no-rebase`
+    - If the branches you want to pull to has diverged from the remote branch you will need to specify how to reconcile the divergence with `--rebase` or `--no-rebase`
   - `git pull --rebase beta_branch`
 - branch
   - Branch is used to create, delete, and list branches of your repository
@@ -62,7 +62,7 @@ Entries that are currently crossed out we will get to later in the course that y
   - `git branch new_branch`
 - checkout
   - Switches branches or restores working tree file
-    - The `b` argument can be used to create a new branch and immediately switch to it
+    - The `-b` argument can be used to create a new branch and immediately switch to it
   - `git checkout new_branch`
 - ~~init~~
 - ~~remote~~
@@ -74,9 +74,9 @@ Entries that are currently crossed out we will get to later in the course that y
     - This folder contains details on every single change made. This information can be used to rollback changes.
     - This folder is hidden to prevent accidental deletion. If this folder is delete you will be unable to rollback changes.
 - .gitignore file
-  - This folder specifiess intentionally untracked files to ignore
-    -
-  - 
+  - This folder specifies intentionally untracked files to ignore
+    - .gitignore uses globbing patterns to match file names against the .gitignore file
+    - It is possible to force an ignored file to be commited by using the `-- force` option with `git add`
 - ~~.git/hooks~~
 
 ## GitHub
