@@ -43,7 +43,7 @@ Entries that are currently crossed out we will get to later in the course that y
   - Fetch is used to bring your local copy of the remote repository up to date
     - When you use the fetch command, it will download the remote contents of your repository and leave your current repository intact.
     - You are able to fetch from multiple repositories and specific branches.
-  - `git fetch my_stuff beta_branch
+  - `git fetch my_stuff beta_branch`
 - merge  
   - Merge is used to join two or more development histories together
     - If the merge results in a conflict you can use `git merge --abort` to abort the merging and try to reconstruct the pre-merge state
@@ -86,7 +86,7 @@ Entries that are currently crossed out we will get to later in the course that y
     - A pull request will create a review page that shows an overview of the changes between your branch and the base branch
     - You can push commits from your branch directly to your existing pull request. These commits will appear in chronological order
     - Other contributors can review the changes, leave comments, and add their own commits to the pull request
-    - After you are happy with the changes, you can merge the pull request with yyour main branch
+    - After you are happy with the changes, you can merge the pull request with your main branch
    
 - SSH authentication to repositories
   - You can use Secure Shell Protocol (SSH) to access and make changes to a repository 
