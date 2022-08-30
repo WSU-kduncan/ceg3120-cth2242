@@ -15,13 +15,13 @@ Entries that are currently crossed out we will get to later in the course that y
 - clone
   - Copies a repository into a new directory
     - The new repository can be cloned from a local or remote repository
-    - Remote repoistorys arecloned from protocols supported by Git such as ssh
+    - Remote repositories are cloned from protocols supported by Git such as ssh
     - A repository can also be partially cloned
   - `git clone git@github.com:WSU-stuff/mystuff.git`
 - add
   - Adds files to the index
-    - You must use this command to add and new or modified files to your index before commiting
-    - Remote repoistorys are cloned from protocols supported by Git such as ssh
+    - You must use this command to add and new or modified files to your index before committing
+    - Remote repoistories are cloned from protocols supported by Git such as SSH or HTTPS
     - A repository can also be partially cloned
     - Your file will not be added to the repository until you `commit` the change
   - `git add test.txt`
@@ -36,13 +36,13 @@ Entries that are currently crossed out we will get to later in the course that y
     - You can use the -m argument to write the commit message in the command line
   - `git commit -m "Added readme.md"`
 - push
-  - Upload the content of the local repository to a remote repositroy 
+  - Upload the content of the local repository to a remote repository
     - You can push to a specified branch by using the following `git push <remote> <branch>`
   - `git push my_stuff beta_branch`
 - fetch
   - Fetch is used to bring your local copy of the remote repository up to date
     - When you use the fetch command, it will download the remote contents of your repository and leave your current repository intact.
-    - You are able to fetch from multiple repositories and specific branches.
+    - You can fetch from multiple repositories and specific branches.
   - `git fetch my_stuff beta_branch`
 - merge  
   - Merge is used to join two or more development histories together
@@ -56,7 +56,7 @@ Entries that are currently crossed out we will get to later in the course that y
 - branch
   - Branch is used to create, delete, and list branches of your repository
     - If the `--list` argument is used, all exisitng branches will be listed
-    - The `-d` argument is used to delete branches. The branch can not be deleted if it contains unmerged changes
+    - The `-d` argument is used to delete branches. The branch cannot be deleted if it contains unmerged changes
     - To create a new branch, you would use `git branch <name-of-new-branch>`
     - The `-m` argument can be used to rename a branch
   - `git branch new_branch`
@@ -76,7 +76,7 @@ Entries that are currently crossed out we will get to later in the course that y
 - .gitignore file
   - This folder specifies intentionally untracked files to ignore
     - .gitignore uses globbing patterns to match file names against the .gitignore file
-    - It is possible to force an ignored file to be commited by using the `-- force` option with `git add`
+    - It is possible to force an ignored file to be committed by using the `-- force` option with `git add`
 - ~~.git/hooks~~
 
 ## GitHub
@@ -91,7 +91,7 @@ Entries that are currently crossed out we will get to later in the course that y
 - SSH authentication to repositories
   - You can use Secure Shell Protocol (SSH) to access and make changes to a repository 
     - When you authenticate with SSH, you use a private key on your local machine to securely connect to the remote repository
-    - You can also use HTTPS to connect to the repository, but this is not recommended as it is worse for automation and is not as secure as a SSH.
+    - You can also use HTTPS to connect to the repository, but this is not recommended as it is worse for automation and is not as secure as SSH
     - You can easily create a SSH key in your terminal by using `ssh-keygen -t ed25519 -C "your_email@example.com"`
     - You will then add your public key to Github by going to Access > SSH and GPG Keys > New SSH Key. Here you will paste the public key into the key field and create a title for the key  
 - ~~Actions~~
