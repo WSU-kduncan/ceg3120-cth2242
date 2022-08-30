@@ -89,9 +89,11 @@ Entries that are currently crossed out we will get to later in the course that y
     - After you are happy with the changes, you can merge the pull request with yyour main branch
    
 - SSH authentication to repositories
-  - 
-    - 
-  - 
+  - You can use Secure Shell Protocol (SSH) to access and make changes to a repository 
+    - When you authenticate with SSH, you use a private key on your local machine to securely connect to the remote repository
+    - You can also use HTTPS to connect to the repository, but this is not recommended as it is worse for automation and is not as secure as a SSH.
+    - You can easily create a SSH key in your terminal by using `ssh-keygen -t ed25519 -C "your_email@example.com"`
+    - You will then add your public key to Github by going to Access > SSH and GPG Keys > New SSH Key. Here you will paste the public key into the key field and create a title for the key  
 - ~~Actions~~
 
 ## Resources I Used
