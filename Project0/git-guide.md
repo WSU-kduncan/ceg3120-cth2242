@@ -82,19 +82,23 @@ Entries that are currently crossed out we will get to later in the course that y
 ## GitHub
 
 - Pull requests
-  -
-    - 
-  - 
+  - Pull requests helps you collaborate with others by allowing you to discuss and review changes before they are merged into the base branch
+    - A pull request will create a review page that shows an overview of the changes between your branch and the base branch
+    - You can push commits from your branch directly to your existing pull request. These commits will appear in chronological order
+    - Other contributors can review the changes, leave comments, and add their own commits to the pull request
+    - After you are happy with the changes, you can merge the pull request with yyour main branch
+   
 - SSH authentication to repositories
   - 
     - 
   - 
 - ~~Actions~~
 
-## Resources
+## Resources I Used
 
 - [Pro Git Book](https://git-scm.com/book/en/v2)
-
+- [Atlassian](https://www.atlassian.com/git/tutorials)
+- [Github Docs](https://docs.github.com/en)
 ## Submission
 
 1. Commit and push your changes to your repository. Verify that these changes show in your course repository, https://github.com/WSU-kduncan/ceg3120-YOURGITHUBNAME
