@@ -8,61 +8,60 @@ Entries that are currently crossed out we will get to later in the course that y
 
 - status
   - Shows status of the local repository. This status includes:
-    - number of local commits that have not been synced with remote (GitHub)
-    - list of files in local folder than are NOT being tracked by git
-    - list of files in local folder that have changes that need to be committed
+    - number of local commits that have not been synced with remote (GitHub).
+    - list of files in local folder than are NOT being tracked by git.
+    - list of files in local folder that have changes that need to be committed.
   - `git status`
 - clone
   - Copies a repository into a new directory
-    - The new repository can be cloned from a local or remote repository
-    - Remote repositories are cloned from protocols supported by Git such as ssh
-    - A repository can also be partially cloned
+    - The new repository can be cloned from a local or remote repository.
+    - Remote repositories are cloned from protocols supported by Git such as ssh.
+    - A repository can also be partially cloned.
   - `git clone git@github.com:WSU-stuff/mystuff.git`
 - add
   - Adds files to the index
-    - You must use this command to add and new or modified files to your index before committing
-    - Remote repoistories are cloned from protocols supported by Git such as SSH or HTTPS
-    - A repository can also be partially cloned
-    - Your file will not be added to the repository until you `commit` the change
+    - You must use this command to add and new or modified files to your index before committing.
+    - Your file will not be added to the repository until you `commit` the change.
   - `git add test.txt`
 - rm
   - Removes files from the index
-    - This command will not remove files from your working directory
+    - This command will not remove files from your working directory.
   - `git rm test.txt`
 - commit
   - Record the change to the repository 
-    - This command will commit the current contents of the index to the repository
-    - A log message describing the changes to the repository is included with the commit
-    - You can use the -m argument to write the commit message in the command line
+    - This command will commit the current contents of the index to the repository.
+    - A log message describing the changes to the repository is included with the commit.
+    - You can use the -m argument to write the commit message in the command line.
   - `git commit -m "Added readme.md"`
 - push
-  - Upload the content of the local repository to a remote repository
-    - You can push to a specified branch by using the following `git push <remote> <branch>`
+  - Upload the content of the local repository to a remote repository.
+    - You can push to a specified branch by using the following `git push <remote> <branch>`.
   - `git push my_stuff beta_branch`
 - fetch
-  - Fetch is used to bring your local copy of the remote repository up to date
+  - Fetch is used to bring your local copy of the remote repository up to date.
     - When you use the fetch command, it will download the remote contents of your repository and leave your current repository intact.
     - You can fetch from multiple repositories and specific branches.
   - `git fetch my_stuff beta_branch`
 - merge  
-  - Merge is used to join two or more development histories together
-    - If the merge results in a conflict you can use `git merge --abort` to abort the merging and try to reconstruct the pre-merge state
+  - Merge is used to join two or more development histories together.
+    - If the merge results in a conflict you can use `git merge --abort` to abort the merging and try to reconstruct the pre-merge state.
+    - By using the `--commit` arguement you can perform and merge and submit a commit at the same time.
   - `git merge beta_branch`
 - pull
-  - The pull command fetches and the remote repository and automatically merges it with your local repository
+  - The pull command fetches and the remote repository and automatically merges it with your local repository.
     - If the branch you are pulling to is behind the remote branch, the branch will be fast-forwarded to match the remote.
-    - If the branches you want to pull to has diverged from the remote branch you will need to specify how to reconcile the divergence with `--rebase` or `--no-rebase`
+    - If the branches you want to pull to has diverged from the remote branch you will need to specify how to reconcile the divergence with `--rebase` or `--no-rebase`.
   - `git pull --rebase beta_branch`
 - branch
-  - Branch is used to create, delete, and list branches of your repository
-    - If the `--list` argument is used, all exisitng branches will be listed
-    - The `-d` argument is used to delete branches. The branch cannot be deleted if it contains unmerged changes
-    - To create a new branch, you would use `git branch <name-of-new-branch>`
-    - The `-m` argument can be used to rename a branch
+  - Branch is used to create, delete, and list branches of your repository.
+    - If the `--list` argument is used, all exisitng branches will be listed.
+    - The `-d` argument is used to delete branches. The branch cannot be deleted if it contains unmerged changes.
+    - To create a new branch, you would use `git branch <name-of-new-branch>`.
+    - The `-m` argument can be used to rename a branch.
   - `git branch new_branch`
 - checkout
-  - Switches branches or restores working tree file
-    - The `-b` argument can be used to create a new branch and immediately switch to it
+  - Checkout is used to switch branches. 
+    - The `-b` argument can be used to create a new branch and immediately switch to it.
   - `git checkout new_branch`
 - ~~init~~
 - ~~remote~~
@@ -82,18 +81,18 @@ Entries that are currently crossed out we will get to later in the course that y
 ## GitHub
 
 - Pull requests
-  - Pull requests helps you collaborate with others by allowing you to discuss and review changes before they are merged into the base branch
-    - A pull request will create a review page that shows an overview of the changes between your branch and the base branch
-    - You can push commits from your branch directly to your existing pull request. These commits will appear in chronological order
-    - Other contributors can review the changes, leave comments, and add their own commits to the pull request
-    - After you are happy with the changes, you can merge the pull request with your main branch
+  - Pull requests helps you collaborate with others by allowing you to discuss and review changes before they are merged into the base branch.
+    - A pull request will create a review page that shows an overview of the changes between your branch and the base branch.
+    - You can push commits from your branch directly to your existing pull request. These commits will appear in chronological order.
+    - Other contributors can review the changes, leave comments, and add their own commits to the pull request.
+    - After you are happy with the changes, you can merge the pull request with your main branch.
    
 - SSH authentication to repositories
-  - You can use Secure Shell Protocol (SSH) to access and make changes to a repository 
-    - When you authenticate with SSH, you use a private key on your local machine to securely connect to the remote repository
-    - You can also use HTTPS to connect to the repository, but this is not recommended as it is worse for automation and is not as secure as SSH
-    - You can easily create a SSH key in your terminal by using `ssh-keygen -t ed25519 -C "your_email@example.com"`
-    - You will then add your public key to Github by going to Access > SSH and GPG Keys > New SSH Key. Here you will paste the public key into the key field and create a title for the key  
+  - You can use Secure Shell Protocol (SSH) to access and make changes to a repository.
+    - When you authenticate with SSH, you use a private key on your local machine to securely connect to the remote repository.
+    - You can also use HTTPS to connect to the repository, but this is not recommended as it is worse for automation and is not as secure as SSH.
+    - You can easily create a SSH key in your terminal by using `ssh-keygen -t ed25519 -C "your_email@example.com"`.
+    - You will then add your public key to Github by going to Access > SSH and GPG Keys > New SSH Key. Here you will paste the public key into the key field and create a title for the key.  
 - ~~Actions~~
 
 ## Resources I Used
@@ -101,9 +100,5 @@ Entries that are currently crossed out we will get to later in the course that y
 - [Pro Git Book](https://git-scm.com/book/en/v2)
 - [Atlassian](https://www.atlassian.com/git/tutorials)
 - [Github Docs](https://docs.github.com/en)
-## Submission
 
-1. Commit and push your changes to your repository. Verify that these changes show in your course repository, https://github.com/WSU-kduncan/ceg3120-YOURGITHUBNAME
-
-2. In Pilot, paste the link to your project folder. Sample link: https://github.com/WSU-kduncan/ceg3120-YOURGITHUBUSERNAME/blob/main/Projects/Project0
 
