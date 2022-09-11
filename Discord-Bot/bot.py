@@ -49,8 +49,8 @@ async def on_message(message):
 
     if message.content == 'towel!':
         print("Message recieved")
-        response = random.choice(brooklyn_99_quotes)
-        #response = random.choice(hitchhiker_quotes)
+        #response = random.choice(brooklyn_99_quotes)
+        response = random.choice(hitchhiker_quotes)
         await message.channel.send(response)
 
 client.run(TOKEN)
