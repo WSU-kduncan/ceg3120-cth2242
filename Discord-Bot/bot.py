@@ -10,7 +10,7 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
 
 prefix = "!"
-needed_intents = discord.Intent.default()
+needed_intents = discord.Intents.default()
 #client = discord.Client()
 client = discord.Client(command_prefix=prefix, intents=needed_intents)
 
