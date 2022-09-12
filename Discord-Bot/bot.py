@@ -38,9 +38,23 @@ async def on_message(message):
         'In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.',
         'A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.',
     ]
-    if message.content == 'towel!':
+
+    arnold_quotes = [
+        'Let off some steam, Bennett',
+        'You\'ve just been erased',
+        'I eat Green Berets for Breakfast, and right now, I\'m very hungry',
+        'Get to the choppa!',
+        'I\'ll be back',
+        'Come with me if you want to live',
+        'If it bleeds, we can kill it',
+        'Dillion, you son of a bitch',
+        'Hasta la vista, baby',
+        'Let\'s kick some ice',
+        'Freeze in Hell, Batman',
+     ]    
+    if message.content == 'arnold!':
     #if message.content.startswith('$towel'):
-        response = random.choice(hitchhiker_quotes)
+        response = random.choice(arnold_quotes)
         await message.channel.send(response)
 
 client.run(TOKEN)
