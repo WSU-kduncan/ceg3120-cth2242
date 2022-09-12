@@ -56,5 +56,5 @@ async def on_message(message):
     #if message.content.startswith('$towel'):
         response = random.choice(arnold_quotes)
         await message.channel.send(response)
-#1234
+
 client.run(TOKEN)
