@@ -1,2 +1,4 @@
 # test
 thisone.txt
+# env files
+*.env
