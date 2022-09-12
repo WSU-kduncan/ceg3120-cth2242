@@ -4,6 +4,9 @@ import discord
 import random
 from dotenv import load_dotenv
 
+intents = discord.Intents.default()
+intents.message_content = True
+
 load_dotenv()
 #print(os.getenv('DISCORD_TOKEN'))
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -11,7 +14,7 @@ GUILD = os.getenv('DISCORD_GUILD')
 
 
 #client = discord.Client()
-client = discord.Client(intents=discord.Intents.default())
+client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():
