@@ -32,13 +32,6 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    hitchhiker_quotes = [
-        'There is an art, it says, or rather, a knack to flying. The knack lies in learning how to throw yourself at the ground and miss.',
-        'It is a mistake to think you can solve any major problems just with potatoes.',
-        'In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.',
-        'A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.',
-    ]
-
     arnold_quotes = [
         'Let off some steam, Bennett',
         'You\'ve just been erased',
@@ -53,7 +46,6 @@ async def on_message(message):
         'Freeze in Hell, Batman',
      ]    
     if message.content == 'arnold!':
-    #if message.content.startswith('$towel'):
         response = random.choice(arnold_quotes)
         await message.channel.send(response)
 
