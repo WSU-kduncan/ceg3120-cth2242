@@ -4,30 +4,26 @@ For each step below, provide a screenshot that shows the network resource has be
 
 1. Create a VPC.
    - A VPC is a logically isolated virtual network that is dedicated to my AWS account. I can use the VPC to 
-<br>
-<br>
-   ![photo of vpc details](images/vpc.png)
+
+![photo of vpc details](images/vpc.png)
 <br>
 <br>
 2. Create a subnet
     - A subnet is the range of IP addresses in my VPC. 
-<br>
-<br>
+
    ![photo of subnet details](images/subnet.png)
 <br>
 <br>
 3. Create an internet gateway
     - A internet gateway is a VPC component that allows communication between my VPC and the internet. 
-<br>
-<br>
+
    - Tag it with "YOURLASTNAME-gw"
    - Attach it to your VPC
    ![photo of gateway](images/gateway.png)
 <br>
 <br>
 4. Create a route table
-<br>
-<br>
+
    - Tag it with "YOURLASTNAME-routetable"
    - Attach it to your VPC
    - Associate it with your subnet
@@ -36,8 +32,7 @@ For each step below, provide a screenshot that shows the network resource has be
 <br>
 <br>
 5. Create a security group
-<br>
-<br>
+
    - Tag it with "YOURLASTNAME-sg"
    - Allow SSH for a set of trusted networks including:
      - Your home / where you usually connect to your instances from
