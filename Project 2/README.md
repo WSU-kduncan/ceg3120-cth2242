@@ -3,23 +3,41 @@
 For each step below, provide a screenshot that shows the network resource has been created according to specification along with a description of what the resource does (what is its role). You may add whatever additional notes you would like. **The screenshot and description of each network component is required**. Any other notes you leave behind may make this project more useful in the future. Getting a good screenshot can be done by clicking on the resource and showing configurations in the details menu.
 
 1. Create a VPC.
-   - Tag it with "YOURLASTNAME-VPC"
+   - A VPC is a logically isolated virtual network that is dedicated to my AWS account. I can use the VPC to 
+<br>
+<br>
    ![photo of vpc details](images/vpc.png)
+<br>
+<br>
 2. Create a subnet
-   - Tag it with "YOURLASTNAME-Subnet"
-   - Specify a /28 private IP address range
+    - A subnet is the range of IP addresses in my VPC. 
+<br>
+<br>
    ![photo of subnet details](images/subnet.png)
+<br>
+<br>
 3. Create an internet gateway
+    - A internet gateway is a VPC component that allows communication between my VPC and the internet. 
+<br>
+<br>
    - Tag it with "YOURLASTNAME-gw"
    - Attach it to your VPC
    ![photo of gateway](images/gateway.png)
+<br>
+<br>
 4. Create a route table
+<br>
+<br>
    - Tag it with "YOURLASTNAME-routetable"
    - Attach it to your VPC
    - Associate it with your subnet
    - Add a routing table rule that sends traffic to all destinations to your internet gateway
    ![photo of routing table](images/routetable.png)
+<br>
+<br>
 5. Create a security group
+<br>
+<br>
    - Tag it with "YOURLASTNAME-sg"
    - Allow SSH for a set of trusted networks including:
      - Your home / where you usually connect to your instances from
@@ -49,3 +67,8 @@ For each step below, provide a screenshot that shows the network resource has be
    2. You should not change permissions on any files you are modifying. They are system config files. You may need to access them with administrative privileges.
    3. Here is a helpful resource: https://www.tecmint.com/set-hostname-permanently-in-linux/ I did not modify `/etc/hosts` on mine - do so or not as you wish.
 10. Create a screenshot your ssh connection to your instance and add it to your project write up - make sure it shows your new hostname.
+
+
+## Resource I used
+
+- [Amazon VPC Docs](https://docs.aws.amazon.com/vpc/latest/userguide/how-it-works.html)
