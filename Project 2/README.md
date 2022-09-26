@@ -45,7 +45,9 @@ For each step below, provide a screenshot that shows the network resource has be
      - Instances within the VPC
    - Attach it to your VPC
    - Image should include your Inbound rules
-6. (If necessary, else skip) Create a key pair
+
+   ![photo of securitygroup](images/sgin.png)
+   ![photo of securitygroup](images/sgout.png)
 
 ## Part 2 - EC2 instances
 
