@@ -12,11 +12,13 @@ For each step below, provide a screenshot that shows the network resource has be
 3. Create an internet gateway
    - Tag it with "YOURLASTNAME-gw"
    - Attach it to your VPC
+   ![photo of gateway](images/gateway.png)
 4. Create a route table
    - Tag it with "YOURLASTNAME-routetable"
    - Attach it to your VPC
    - Associate it with your subnet
    - Add a routing table rule that sends traffic to all destinations to your internet gateway
+   ![photo of routing table](images/routetable.png)
 5. Create a security group
    - Tag it with "YOURLASTNAME-sg"
    - Allow SSH for a set of trusted networks including:
