@@ -64,12 +64,12 @@ For each step below, provide a screenshot that shows the network resource has be
 8. Create a screenshot your instance details and add it to your project write up.
    ![sample instance details](images/sample.png)
 9. `ssh` in to your instance. Change the hostname to "YOURLASTNAME-AMI" where AMI is some version of the AMI you chose. Say how you did it.
-   1. It is wise to copy config files you are about to change to filename.old For `/etc/hostname`, for example, I would first copy the current `hostname` file to `/etc/hostname.old`
-   2. You should not change permissions on any files you are modifying. They are system config files. You may need to access them with administrative privileges.
-   3. Here is a helpful resource: https://www.tecmint.com/set-hostname-permanently-in-linux/ I did not modify `/etc/hosts` on mine - do so or not as you wish.
+   - After getting into my system, I used the command `sudo hostnamectl set-hostname Hulin-ubuntu` to change my hostname
+   - I then restarted my system
 10. Create a screenshot your ssh connection to your instance and add it to your project write up - make sure it shows your new hostname.
-
+   ![hostname changed](images/hostname.png)
 
 ## Resource I used
 
 - [Amazon VPC Docs](https://docs.aws.amazon.com/vpc/latest/userguide/how-it-works.html)
+- [Guide to Change Hostname](https://www.tecmint.com/set-hostname-permanently-in-linux)
