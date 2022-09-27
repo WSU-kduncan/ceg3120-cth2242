@@ -9,19 +9,22 @@ For each step below, provide a screenshot that shows the network resource has be
 <br>
 <br>
 2. Create a subnet
-    - A subnet is the range of IP addresses in my VPC. You can use a public subnet for resources that must connect to the internet, and a private subnet for resources that are going to stay in your VPC. 
+   
+   - A subnet is the range of IP addresses in my VPC. You can use a public subnet for resources that must connect to the internet, and a private subnet for resources that are going to stay in your VPC. 
 
    ![photo of subnet details](images/subnet.png)
 <br>
 <br>
 3. Create an internet gateway
-    - A internet gateway is a VPC component that allows communication between a VPC and the internet, other VPCs, or an on-premises network. A gateway provides this service by acting as a target for your VPC route table. It supports IPv4 and IPv6 traffic. 
+    
+   - A internet gateway is a VPC component that allows communication between a VPC and the internet, other VPCs, or an on-premises network. A gateway provides this service by acting as a target for your VPC route table. It supports IPv4 and IPv6 traffic. 
 
 
    ![photo of gateway](images/gateway.png)
 <br>
 <br>
 4. Create a route table
+  
    - This component contains a set of rules, called routes, that determine where network traffic from your subnet or gateway is directed. 
    ![photo of routing table](images/routetable.png)
 <br>
