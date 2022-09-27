@@ -40,17 +40,29 @@ For each step below, provide a screenshot that shows the network resource has be
 
 1. Create a new instance. Give a write up of the following information:
    - AMI selected
-     - default username of the instance type selected
+      - Ubuntu
+   - Default username of the instance type selected
+      - ubuntu 
    - Instance type selected
+      - t2.micro
 2. Attach the instance to your VPC. As discussed there are different pathways to doing this. Say how you did it.
+   - I attached my VPC to my instance by changing the option in `Network setting > VPC` from the default one to the VPC I created. 
 3. Determine whether a Public IPv4 address will be auto-assigned to the instance. Justify your choice to do so (or not do so)
-   - **NOTE** - in the next few steps, you will be required to request an Elastic IP address and associate it to the instance. Factor that in to your discussion here.
+   - I did not associate a Public IPv4 for my instance. I did this because it would be redundant. It would be redundant because this project requires us to create a Elastic IP and attach it to the instance. 
 4. Attach a volume to your instance. As discussed there are different pathways to doing this. Say how you did it.
+   - I attached a volume to my instance in the `Configure storage` area of the `Launch an instance` screen. I chose the default option of 1x 8 Gigabyte gp2 root volume. 
 5. Tag your instance with a "Name" of "YOURLASTNAME-instance". Say how you did it.
+   - I chose the tag for my instance in the `Name and tag` area of the `Launch an instance` screen.  
 6. Associate your security group, "YOURLASTNAME-sg" to your instance. Say how you did it.
+   - I chose for the new instance to use my security group by navigationg to the `Network setting > Firewalls(security group)` area of the `Launch an instance` screen. I changed to my security group from the default option by choosing the `Select an existing security group` and selecting my security group from the drop down list. 
 7. Reserve an Elastic IP address. Tag it with "YOURLASTNAME-EIP". Associate the Elastic IP with your instance. Say how you did it.
-8. Create a screenshot your instance details and add it to your project write up. Example below:
-   ![sample instance details](sample.png)
+   - I created my Elastic IP address by first navigating to `Network and Securtiy > Elastic IPs` . 
+   - I then clicked `Allocate Elastic IP address`. I used all of the default options and clicked `Allocate` at the bottom of the page
+   - After the Elastic IP was created, I clicked `Actions > Associate Elastic IP address`. 
+   - On the `Associate ELastic IP address` page, I chose my new instance from the drop down menu in the `Instance` field and selected the default private IP in the `Private IP adress` field. I then clicked `Associate` at the bottom of the page.
+
+8. Create a screenshot your instance details and add it to your project write up.
+   ![sample instance details](images/sample.png)
 9. `ssh` in to your instance. Change the hostname to "YOURLASTNAME-AMI" where AMI is some version of the AMI you chose. Say how you did it.
    1. It is wise to copy config files you are about to change to filename.old For `/etc/hostname`, for example, I would first copy the current `hostname` file to `/etc/hostname.old`
    2. You should not change permissions on any files you are modifying. They are system config files. You may need to access them with administrative privileges.
