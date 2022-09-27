@@ -3,43 +3,32 @@
 For each step below, provide a screenshot that shows the network resource has been created according to specification along with a description of what the resource does (what is its role). You may add whatever additional notes you would like. **The screenshot and description of each network component is required**. Any other notes you leave behind may make this project more useful in the future. Getting a good screenshot can be done by clicking on the resource and showing configurations in the details menu.
 
 1. Create a VPC.
-   - A VPC is a logically isolated virtual network that is dedicated to my AWS account. I can use the VPC to 
+   - A VPC is a logically isolated virtual network that is dedicated to my AWS account. You can use your VPC to launch resources such as Amazon EC2 instances. 
 
 ![photo of vpc details](images/vpc.png)
 <br>
 <br>
 2. Create a subnet
-    - A subnet is the range of IP addresses in my VPC. 
+    - A subnet is the range of IP addresses in my VPC. You can use a public subnet for resources that must connect to the internet, and a private subnet for resources that are going to stay in your VPC. 
 
    ![photo of subnet details](images/subnet.png)
 <br>
 <br>
 3. Create an internet gateway
-    - A internet gateway is a VPC component that allows communication between my VPC and the internet. 
+    - A internet gateway is a VPC component that allows communication between a VPC and the internet, other VPCs, or an on-premises network. A gateway provides this service by acting as a target for your VPC route table. It supports IPv4 and IPv6 traffic. 
 
-   - Tag it with "YOURLASTNAME-gw"
-   - Attach it to your VPC
+
    ![photo of gateway](images/gateway.png)
 <br>
 <br>
 4. Create a route table
-
-   - Tag it with "YOURLASTNAME-routetable"
-   - Attach it to your VPC
-   - Associate it with your subnet
-   - Add a routing table rule that sends traffic to all destinations to your internet gateway
+   - This component contains a set of rules, called routes, that determine where network traffic from your subnet or gateway is directed. 
    ![photo of routing table](images/routetable.png)
 <br>
 <br>
 5. Create a security group
 
-   - Tag it with "YOURLASTNAME-sg"
-   - Allow SSH for a set of trusted networks including:
-     - Your home / where you usually connect to your instances from
-     - Wright State (addresses starting with 130.108)
-     - Instances within the VPC
-   - Attach it to your VPC
-   - Image should include your Inbound rules
+   - A security group controls the inbound and outbound traffic in your VPC. You can add rules that control traffic based on protocol and port numbers. There are seperate rules for inbound and outbound traffic. s
 
    ![photo of securitygroup](images/sgin.png)
    ![photo of securitygroup](images/sgout.png)
