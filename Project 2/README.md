@@ -3,14 +3,14 @@
 For each step below, provide a screenshot that shows the network resource has been created according to specification along with a description of what the resource does (what is its role). You may add whatever additional notes you would like. **The screenshot and description of each network component is required**. Any other notes you leave behind may make this project more useful in the future. Getting a good screenshot can be done by clicking on the resource and showing configurations in the details menu.
 
 1. Create a VPC.
-   - A VPC is a logically isolated virtual network that is dedicated to my AWS account. You can use your VPC to launch resources such as Amazon EC2 instances. 
+   - A VPC is a logically isolated virtual network that is dedicated to my AWS account. I can use my VPC to host resources such as Amazon EC2 instances. I specified that my VPC would be /24 network. 
 
 ![photo of vpc details](images/vpc.png)
 <br>
 <br>
 2. Create a subnet
    
-   - A subnet is the range of IP addresses in my VPC. You can use a public subnet for resources that must connect to the internet, and a private subnet for resources that are going to stay in your VPC. 
+   - A subnet is the range of IP addresses in my VPC. You can use a public subnet for resources that must connect to the internet, and a private subnet for resources that are going to stay in your VPC. Each subnet is only available in the zone I created it in. The size of the subnet I created is a /28 which would allow my VPC to connect 14 different hosts. 
 
    ![photo of subnet details](images/subnet.png)
 <br>
@@ -25,13 +25,13 @@ For each step below, provide a screenshot that shows the network resource has be
 <br>
 4. Create a route table
   
-   - This component contains a set of rules, called routes, that determine where network traffic from your subnet or gateway is directed. 
+   - This component contains a set of rules, called routes, that determine where network traffic from your subnet or gateway is directed. The route I created directs all outbound traffic in my VPC to the gateway I created. 
    ![photo of routing table](images/routetable.png)
 <br>
 <br>
 5. Create a security group
 
-   - A security group controls the inbound and outbound traffic in your VPC. You can add rules that control traffic based on protocol and port numbers. There are seperate rules for inbound and outbound traffic. s
+   - A security group controls the inbound and outbound traffic in your VPC. You can add rules that control traffic based on protocol and port numbers. There are separate rules for inbound and outbound traffic. The security groups I created only allow SSH to instances in my VPC from certain IP addresses. These IP addresses are WSU, other instances in my VPC, and my home network. 
 
    ![photo of securitygroup](images/sgin.png)
    ![photo of securitygroup](images/sgout.png)
@@ -65,7 +65,7 @@ For each step below, provide a screenshot that shows the network resource has be
    ![sample instance details](images/sample.png)
 9. `ssh` in to your instance. Change the hostname to "YOURLASTNAME-AMI" where AMI is some version of the AMI you chose. Say how you did it.
    - After getting into my system, I used the command `sudo hostnamectl set-hostname Hulin-ubuntu` to change my hostname
-   - I then restarted my system
+   - I then restarted the system
 10. Create a screenshot your ssh connection to your instance and add it to your project write up - make sure it shows your new hostname.
    ![hostname changed](images/hostname.png)
 
