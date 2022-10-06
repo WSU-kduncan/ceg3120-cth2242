@@ -169,9 +169,6 @@
     - IPv4 addresses have at least 8 bits to specify the host portion & two bits to the host part
     - Netmask / subnet mask is a 32 bits specification of the network vs the host portion.  
     - /XX = CIDR Notation, where XX is the number of bits in the network portion
-
-    
-    ![cidr chart](images/cidr.png)
   - routes
     - Data is sent via a chain of subnets - at each "hop" the packet is told where to go next
     - Routing = looking up a network adderss in the routing table to forward a packet to its destination
