@@ -7,6 +7,8 @@
 
 ## Proof 
 
+### Stack 
+![Stack](images/stack.png)
 ### VPC
 ![VPC](images/vpc.png)
 ### Subnet
