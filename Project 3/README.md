@@ -5,6 +5,10 @@
 - Create a CloudFormation to specification to remove manual creation
 - Understand the role of Infrastructure as Code (IaC)
 
+## Project Description
+
+This folder contains a YAML template to create a CloudFormation. The pictures in this document are the CloudFormation components created by the template. 
+
 ## Proof 
 
 ### Stack 
@@ -23,4 +27,4 @@
 ![Great Success](images/success.png)
 ## Resources Used
 
-[Main Resource](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+[AWS Cloud Formation Documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
