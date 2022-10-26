@@ -39,4 +39,4 @@
    ![Screenshot of Server 1](images/screenshot1.png)
    - one screenshot that shows content from "server 2"
    ![Screenshot of Server 2](images/screenshot2.png)
-   - [Link to Proxy](52.4.4.52)
+   - [Link to Proxy](http://52.4.4.52)`
