@@ -18,9 +18,11 @@
 3. **_HAProxy configuration & documentation requirements_**
    - How to set up a HAProxy load balancer
      - What file(s) where modified & their location
+         - I modified the haproxy.cfg file. The path to the file is `/etc/haproxy/haproxy.cfg`. 
      - What configuration(s) were set (if any)
+         - 
      - How to restart the service after a configuration change
-        `sudo systemctl restart haproxy`
+         - `sudo systemctl restart haproxy`
      - Resources used (websites)
         -[Main Resource Used](https://www.haproxy.com/blog/the-four-essential-sections-of-an-haproxy-configuration/)
         -[Haproxy Troubleshooting Resource](https://bobcares.com/blog/haproxy-network-error-cannot-bind-socket/)
@@ -30,9 +32,11 @@
      - What configuration(s) were set (if any)
      - Where site content files were located (and why)
      - How to restart the service after a configuration change
-        `sudo systemctl restart apache2`
+         - `sudo systemctl restart apache2`
      - Resources used (websites)
 5. From the browser, when connecting to the proxy server, take two screenshots.
    - one screenshot that shows content from "server 1"
+   ![Screenshot of Server 1](images/screenshot1.png)
    - one screenshot that shows content from "server 2"
-6. (Optional) - link to your proxy so I can click it.
+   ![Screenshot of Server 2](images/screenshot2.png)
+   - [Link to Proxy](52.4.4.52)
